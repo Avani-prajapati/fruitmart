@@ -1,70 +1,21 @@
-# Getting Started with Create React App
+## The Fruit Mart: A CRUD Operation Project in React 
+- This React project demonstrates CRUD (Create, Read, Update, and Delete) operations for a fruit market simulation. Let's explore its functionalities(it only UI design and some basic crud opretaion):
+### Buying Fruit:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Selecting a Fruit: Click the "Buy" button next to the desired fruit.
+- Quantity Input and Error Handling:
+1. Fruit Selected: Enter a quantity to purchase. If successful, an alert will confirm the order and update the fruit's available quantity accordingly.
+2. No Fruit Selected: If you try to buy fruit without selecting one first, an alert message will appear, prompting you to "Please choose a particular fruit" before entering a quantity.
+3. Out of Stock: If you attempt to buy the entire remaining stock of a particular fruit,after buying that fruit "BUY" button  will become disabled, indicating that the item is out of stock.
 
-## Available Scripts
+### Adding Products:
 
-In the project directory, you can run:
+- A dedicated "Add" section allows you to introduce new fruits or modify existing ones:
 
-### `npm start`
+1. New Fruit: Provide details like name, quantity, and price to add a completely new fruit item.
+2. Existing Fruit: To add more stock to an existing fruit, simply enter its name, quantity (the amount you're adding), and price. This will update the quantity displayed for that fruit.<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![image](/public/images/Screenshot%20(108).png)
+<br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![image](/public/images/Screenshot%20(109).png)
