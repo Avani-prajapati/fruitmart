@@ -15,6 +15,14 @@
 1. New Fruit: Provide details like name, quantity, and price to add a completely new fruit item.
 2. Existing Fruit: To add more stock to an existing fruit, simply enter its name, quantity (the amount you're adding), and price. This will update the quantity displayed for that fruit.<br>
 
+### Getting Started (assumes basic React knowledge)
+
+- Clone this repository.
+
+- Install dependencies: ```npm install```
+- Start the development server: ```npm start```
+
+
 ![image](/public/images/Screenshot%20(108).png)
 <br>
 
