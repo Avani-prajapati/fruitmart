@@ -35,9 +35,6 @@ function handleSubmit(e){
     setQuantity('')
     return;
   }
-  if(isNaN(tempquantity)){
-  alert("Your entered quantity is not a number");
-  }
   else if(tempquantity>prev){
     alert("Your order is not placed because that much quantity is not avalable");
   }
@@ -62,10 +59,6 @@ function handleAddChange(e){
   })
 }
 function handleAdd(){
-  if(isNaN(prd.price) || isNaN(prd.quantityInKg))
-    {
-      alert("type value differ")
-      }
       const added=tempdata.find(p=>p.name===prd.name);
       if(added){
       const qnt=added.quantityInKg;
@@ -100,7 +93,7 @@ return (
     <label style={{fontWeight:"bold"}}>Name</label>
     <input type="text" onChange={handleChange} title="name" value={tempname} placeholder="name" style={{height:"2rem",fontSize:"1.2rem"}} disabled></input>
     <label>quantity</label>
-    <input type="text" onChange={handleChange} value={tempquantity} title="quantity" placeholder="quantity(kg)" style={{height:"2rem",fontSize:"1.2rem"}}></input>
+    <input type="number" onChange={handleChange} value={tempquantity} title="quantity" placeholder="quantity(kg)" style={{height:"2rem",fontSize:"1.2rem"}}></input>
     <button className="app-btn">Buy Quantity</button>
   </form>
    <div  className="Fruits">
@@ -122,21 +115,21 @@ return (
   <form className="Addfrom">
     <div>
   <label className="add">Imageurl : </label>
-  <input className="add" value={prd.img} title="img" onChange={handleAddChange}></input>
+  <input className="add" type="text" value={prd.img} title="img" onChange={handleAddChange}></input>
       </div>    
     <div>
   <label className="add">name     : </label>
-  <input className="add" value={prd.name} title="name" onChange={handleAddChange}></input>
+  <input className="add" type="text" value={prd.name} title="name" onChange={handleAddChange}></input>
       
       </div>    
     <div>
       
   <label className="add">Price : </label>
-  <input className="add" value={prd.price} title="price" onChange={handleAddChange}></input>
+  <input className="add" type="number" value={prd.price} title="price" onChange={handleAddChange}></input>
       </div>    
     <div>
   <label className="add">Quantity : </label>
-  <input className="add" value={prd.quantityInKg} title="quantityInKg" onChange={handleAddChange}></input>
+  <input className="add" type="number" value={prd.quantityInKg} title="quantityInKg" onChange={handleAddChange}></input>
       
       </div>    
   </form>
